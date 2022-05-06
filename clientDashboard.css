@@ -1,0 +1,16 @@
+.navbar navbar-expand-lg navbar-light bg-light {
+  position: fixed;
+}
+
+.welcome-area {
+  text-align: center;
+}
+
+.container img {
+  width: 400px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 0; !important
+}

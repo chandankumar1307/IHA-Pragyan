@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Courses</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="clientDashboard.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">
+        <img
+          src="BOOST/Iha_pragyan_logo_new__2_.png"
+          alt=""
+          width="70px"
+          height="60px"
+          class="d-inline-block align-text-top"
+        />
+        <!-- <b> Iha Pragyan</b> -->
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div
+        class="collapse navbar-collapse justify-content-end"
+        id="navbarSupportedContent"
+      >
+        <!-- <span style="margin-left: 600px;"> -->
+        <ul class="navbar-nav">
+          <li class="nav-item px-2 active">
+            <a class="nav-link" href="/"><b>Home</b></a>
+          </li>
+          <li class="nav-item px-2">
+            <a class="nav-link" href="/about.html"><b>About us</b></a>
+          </li>
+
+          <li class="nav-item px-2 dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              <b>Services</b>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="AI.html">AI Startups</a>
+              <a class="dropdown-item" href="MSME.html">MSME</a>
+              <a class="dropdown-item" href="Datascience.html">Datascience</a>
+              <div class="dropdown-divider"></div>
+              <!-- <a class="dropdown-item" href="#">Image Processing</a>
+                <a class="dropdown-item" href="#">Computer Vision</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Deep Learning</a>
+                <a class="dropdown-item" href="#">Training & EDPs</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Computer Vision</a> -->
+            </div>
+          </li>
+          <li class="nav-item px-2">
+            <a class="nav-link" href="/Courses.html"><b>Courses</b></a>
+          </li>
+          <li class="nav-item px-2">
+            <a class="nav-link" href="/contact.html"><b>Contact Us</b></a>
+          </li>
+        </ul>
+        <!-- </span> -->
+        <!-- <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+          </form> -->
+        <div class="mx-2">
+          <!-- <form name="form"></form> -->
+          <button
+            name="button"
+            id="viewLoginButton"
+            class="btn btn-danger"
+            data-toggle="modal"
+            data-target="#loginModal"
+          >
+            <b>Login</b>
+          </button>
+          <!-- <button class="btn btn-danger" data-toggle="modal" data-target="#signupModal"><b>SignUp</b></button> -->
+        </div>
+      </div>
+    </nav>
+
+    <!-- Navbar -->
+
+    <br /><br /><br /><br />
+    <br />
+    <div class="welcome-area">
+      <h1>WELCOME</h1>
+      <h3>To</h3>
+      <h3>IHA Pragyan</h3>
+      <p>This is your course homepage</p>
+    </div>
+    <br /><br />
+
+    <section class="my-courses">
+      <div class="container">
+        <div class="row">
+          <div class="col col-lg-6 col-sm-12">
+            <img src="./image/Courses_Image.png" alt="my-courses" />
+          </div>
+          <div class="col col-lg-6 col-sm-12">
+            <h2 style="text-align: center; margin-top: 10px">My Courses</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque
+              deserunt modi ea vel, dicta odit. Praesentium placeat numquam
+              cumque aliquid magni quia dolorem pariatur voluptate nam tenetur,
+              est, libero optio.
+            </p>
+            <button>Lesson 1</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <script src="javascript.js"></script>
+  </body>
+</html>
