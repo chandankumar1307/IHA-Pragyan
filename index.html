@@ -547,15 +547,16 @@
 
   <script src="javascript.js"></script>
  <!-- Login and SignUp Script  -->
- <script type="module">
 
+ <script type="module">
+   
 document.getElementById("signUp").addEventListener("click", function(event){
-  event.preventDefault()
+  event.preventDefault();
 });
 document.getElementById("logIn").addEventListener("click", function(event){
-  event.preventDefault()
+  event.preventDefault();
 });
-
+  //import authApp from "./app.js";
    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.4.0/firebase-app.js";
    import {getDatabase,set,ref,update} from "https://www.gstatic.com/firebasejs/9.4.0/firebase-database.js";
 //import { getAnalytics } from "firebase/analytics";
@@ -575,8 +576,8 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 //const analytics = getAnalytics(app);
 
-const database=getDatabase(app);
-const auth =getAuth();
+ const database=getDatabase(app);
+ const auth =getAuth();
 
 console.log(document.getElementById("viewLoginButton").innerHTML);
 
@@ -632,8 +633,9 @@ var password=document.getElementById('exampleInputPassword1').value;
 
     alert("User Loged in");
     document.getElementById("logInClose").click();
-    document.getElementById("viewLoginButton").innerHTML="<b>Logout</b>"
+    //document.getElementById("viewLoginButton").innerHTML="<b>Logout</b>"
    //="Logout";
+   window.location.replace("./clientDashboard.html");
     // ...
   })
   .catch((error) => {
