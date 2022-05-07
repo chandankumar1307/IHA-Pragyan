@@ -31,15 +31,16 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  flex-basis: auto;
 }
 
 /* Button */
 
 .lessonBtn {
-  font-size: 18px;
+  font-size: 24px;
   font-family: Times New Roman;
   width: 114px;
-  height: 40px;
+  height: 50px;
   border-width: 1px;
   color: #666666;
   border-color: #dcdcdc;
@@ -49,19 +50,22 @@
   border-bottom-right-radius: 6px;
   box-shadow: inset 0px 1px 0px -26px #ffffff;
   text-shadow: inset 0px 1px 0px #ffffff;
-  background: linear-gradient(#ffffff, #f6f6f6);
+  background: linear-gradient(#9fef8b, #a7ffb4);
 }
 
 .lessonBtn:hover {
-  background: linear-gradient(#f6f6f6, #ffffff);
+  background: linear-gradient(#a7ffb4, #9fef8b);
 }
 
 /* Form */
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 
 form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   max-width: 420px;
-  margin-left: 80px;
+  /* margin-left: 80px; */
   /* margin: 10px auto; */
 }
 
@@ -101,7 +105,7 @@ textarea {
   border-bottom-left-radius: 6px;
   border-bottom-right-radius: 6px;
 
-  background: linear-gradient(#a0b1d5, #cec3ff);
+  background: linear-gradient(#9fef8b, #a7ffb4);
   border-radius: 5px;
   border: 0;
   cursor: pointer;
@@ -115,5 +119,5 @@ textarea {
   margin-bottom: 50px;
 }
 [type="submit"]:hover {
-  background: linear-gradient(#cec3ff, #a0b1d5);
+  background: linear-gradient(#a7ffb4, #9fef8b);
 }
