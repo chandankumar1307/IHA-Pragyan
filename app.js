@@ -1,4 +1,4 @@
-import firebase from "firebase";
+import { initializeApp } from "https://www.gstatic.com/firebasejs/9.4.0/firebase-app.js";
 
 const firebaseConfig = {
   apiKey: "AIzaSyA7CFtGbOu9nuSub50ESIAbozuwc1C8Bi4",
@@ -10,5 +10,5 @@ const firebaseConfig = {
   measurementId: "G-GFS076F277",
 };
 
-var authApp = firebase.initializeApp(firebaseConfig);
+var authApp = initializeApp(firebaseConfig);
 module.exports.authApp = authApp();
