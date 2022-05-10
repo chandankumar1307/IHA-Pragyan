@@ -16,7 +16,14 @@
     <!-- CSS -->
     <link rel="stylesheet" href="clientDashboard.css" />
     <link rel="stylesheet/scss" href="clientForm.scss" />
+    
   </head>
+</head>
+<style>
+  .noDisplay{
+    display: none;
+  }
+  </style>
   <body>
     <!-- Navbar -->
     <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
@@ -134,14 +141,22 @@
               target="_blank"
               href="https://drive.google.com/file/d/1CEPMGoU8uAiEqWLydTjIrCux5P6soeXY/view?usp=sharing"
             >
-              <button class="lessonBtn">Lecture 1</button>
+              <button class="assignment-button">Lecture 1</button>
             </a>
           </div>
         </div>
         <div class="row boxes">
           <div class="col col-lg-6 col-sm-12 text-area">
             <h2>Assignments/Tests</h2>
-            <p>No Assignments Available Yet!</p>
+            <br>
+            <a target="_blank" href="https://www.testportal.net/test.html?t=EuH9W24uWgdA"> 
+              <button style="width: 280px; font-weight: 300;" class="assignment-button" role="button">Latest Assignments</button>
+            </a>
+            <br>
+            <a target="_blank" href="https://www.testportal.net/test.html?t=EuH9W24uWgdA">
+
+              <button style="margin-bottom: 30px;" class="assignment-button" role="button">Previous Assignments</button> <br>
+            </a>
           </div>
           <div class="col col-lg-6 col-sm-12 image-box">
             <img src="./image/Assignments_Image.png" alt="my-courses" />
@@ -180,8 +195,10 @@
                   placeholder="Comment"
                   id="formQuery"
                 ></textarea>
-                <input type="submit" value="SUBMIT" id="formSubmit" />
-              </form>
+                <button class="assignment-button" type="submit"  id="formSubmit" style="font-size: 25px;font-weight:500">Submit</button> 
+                <small id="querySent" class="form-text noDisplay " style="color: red;padding-left:220px;padding-top: 5px;font-style: italic;">*Query Sent</small>
+                <br><br>
+            </form>
             </div>
           </div>
         </div>
@@ -227,6 +244,7 @@
           Query: query,
         });
         console.log(name);
+        document.getElementById('querySent').classList.remove("noDisplay");
       });
     </script>
     <!-- User Backend Area -->

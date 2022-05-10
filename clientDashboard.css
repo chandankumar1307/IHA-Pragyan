@@ -36,7 +36,7 @@
 
 /* Button */
 
-.lessonBtn {
+/* .lessonBtn {
   font-size: 24px;
   font-family: Times New Roman;
   width: 114px;
@@ -55,7 +55,45 @@
 
 .lessonBtn:hover {
   background: linear-gradient(#a7ffb4, #9fef8b);
+} */
+
+.assignment-button {
+  font-size: 16px;
+  font-weight: 200;
+  letter-spacing: 1px;
+  padding: 13px 20px 13px;
+  outline: 0;
+  border: 1px solid black;
+  cursor: pointer;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
 }
+
+.assignment-button:after {
+  content: "";
+  background-color: #a7ffb4;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 7px;
+  left: 7px;
+  transition: 0.2s;
+}
+
+.assignment-button:hover:after {
+  top: 0px;
+  left: 0px;
+}
+
+/* @media (min-width: 768px) {
+  .button-52 {
+    padding: 13px 50px 13px;
+  } */
+
 
 /* Form */
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
@@ -96,7 +134,7 @@ textarea {
   resize: vertical;
 }
 
-[type="submit"] {
+/* [type="submit"] {
   font-family: "Montserrat", Arial, Helvetica, sans-serif;
   width: 300px;
   border-color: #dcdcdc;
@@ -105,7 +143,7 @@ textarea {
   border-bottom-left-radius: 6px;
   border-bottom-right-radius: 6px;
 
-  background: linear-gradient(#9fef8b, #a7ffb4);
+ 
   border-radius: 5px;
   border: 0;
   cursor: pointer;
@@ -117,7 +155,4 @@ textarea {
   margin-top: -4px;
   font-weight: 700;
   margin-bottom: 50px;
-}
-[type="submit"]:hover {
-  background: linear-gradient(#a7ffb4, #9fef8b);
-}
+} */

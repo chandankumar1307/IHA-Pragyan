@@ -16,8 +16,8 @@
     <title>Blog</title>
   </head>
   <body >
-    <nav class="navbar  fixed-top navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">
+    <nav  class="navbar  fixed-top navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="index.html">
         <img src="BOOST/Iha_pragyan_logo_new__2_.png" alt="" width="70px" height="60px"
           class="d-inline-block align-text-top">
         <!-- <b> Iha Pragyan</b> -->
@@ -27,17 +27,17 @@
         <span class="navbar-toggler-icon"></span>
       </button>
   
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <span style="margin-left: 900px;">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active" >
+      <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+        <!-- <span style="margin-left: 600px;"> -->
+        <ul class="navbar-nav ">
+          <li class="nav-item px-2 active" >
             <a class="nav-link" href="/"><b>Home</b></a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item px-2">
             <a class="nav-link" href="/about.html"><b>About us</b></a>
           </li>
   
-          <li class="nav-item dropdown">
+          <li class="nav-item px-2 dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
               aria-haspopup="true" aria-expanded="false">
               <b>Services</b>
@@ -56,10 +56,10 @@
               <a class="dropdown-item" href="#">Computer Vision</a> -->
             </div>
           </li>
-          <li class="nav-item">
+          <li class="nav-item px-2">
             <a class="nav-link" href="/Courses.html"><b>Courses</b></a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item px-2">
             <a class="nav-link" href="/contact.html"><b>Contact Us</b></a>
           </li>
   
@@ -69,12 +69,16 @@
   
   
         </ul>
-      </span>
+      <!-- </span> -->
         <!-- <form class="form-inline my-2 my-lg-0">
           <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
           <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
         </form> -->
-       
+        <div class="mx-2">
+          <!-- <form name="form"></form> -->
+          <button name="button" id="viewLoginButton" class="btn btn-danger" data-toggle="modal" data-target="#loginModal"><b>Login</b></button>
+          <!-- <button class="btn btn-danger" data-toggle="modal" data-target="#signupModal"><b>SignUp</b></button> -->
+        </div>
       </div>
     </nav>
 
