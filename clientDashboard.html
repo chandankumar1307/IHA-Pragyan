@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Courses</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="clientDashboard.css" />
+    <link rel="stylesheet/scss" href="clientForm.scss" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="./index.html">
+        <img
+          src="BOOST/Iha_pragyan_logo_new__2_.png"
+          alt=""
+          width="70px"
+          height="60px"
+          class="d-inline-block align-text-top"
+        />
+        <!-- <b> Iha Pragyan</b> -->
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div
+        class="collapse navbar-collapse justify-content-end"
+        id="navbarSupportedContent"
+      >
+        <!-- <span style="margin-left: 600px;"> -->
+        <ul class="navbar-nav">
+          <li class="nav-item px-2 active">
+            <a class="nav-link" href="/"><b>Home</b></a>
+          </li>
+          <li class="nav-item px-2">
+            <a class="nav-link" href="/about.html"><b>About us</b></a>
+          </li>
+
+          <li class="nav-item px-2 dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              <b>Services</b>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="AI.html">AI Startups</a>
+              <a class="dropdown-item" href="MSME.html">MSME</a>
+              <a class="dropdown-item" href="Datascience.html">Datascience</a>
+              <div class="dropdown-divider"></div>
+              <!-- <a class="dropdown-item" href="#">Image Processing</a>
+                <a class="dropdown-item" href="#">Computer Vision</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Deep Learning</a>
+                <a class="dropdown-item" href="#">Training & EDPs</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Computer Vision</a> -->
+            </div>
+          </li>
+          <li class="nav-item px-2">
+            <a class="nav-link" href="/Courses.html"><b>Courses</b></a>
+          </li>
+          <li class="nav-item px-2">
+            <a class="nav-link" href="/contact.html"><b>Contact Us</b></a>
+          </li>
+        </ul>
+        <!-- </span> -->
+        <!-- <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+          </form> -->
+        <div class="mx-2">
+          <!-- <form name="form"></form> -->
+          <button
+            name="button"
+            id="viewLoginButton"
+            class="btn btn-danger"
+            data-toggle="modal"
+            data-target="#loginModal"
+          >
+            <b>Logout</b>
+          </button>
+          <!-- <button class="btn btn-danger" data-toggle="modal" data-target="#signupModal"><b>SignUp</b></button> -->
+        </div>
+      </div>
+    </nav>
+
+    <!-- Navbar -->
+
+    <br /><br /><br /><br />
+    <br />
+    <div class="welcome-area">
+      <h1>WELCOME</h1>
+      <h3>To</h3>
+      <h3>IHA Pragyan</h3>
+      <p>This is your course homepage</p>
+    </div>
+    <br /><br />
+
+    <section class="my-courses">
+      <div class="container">
+        <div class="row">
+          <div class="col col-lg-6 col-md-12 col-sm-12 col-xs-12 image-box">
+            <img src="./image/Courses_Image.png" alt="my-courses" />
+          </div>
+          <div class="col col-lg-6 col-md-12 col-sm-12 col-xs-12 text-area">
+            <h2>My Courses</h2>
+            <p>Find all your current course materials here</p>
+            <a
+              target="_blank"
+              href="https://drive.google.com/file/d/1CEPMGoU8uAiEqWLydTjIrCux5P6soeXY/view?usp=sharing"
+            >
+              <button class="lessonBtn">Lecture 1</button>
+            </a>
+          </div>
+        </div>
+        <div class="row boxes">
+          <div class="col col-lg-6 col-sm-12 text-area">
+            <h2>Assignments/Tests</h2>
+            <p>No Assignments Available Yet!</p>
+          </div>
+          <div class="col col-lg-6 col-sm-12 image-box">
+            <img src="./image/Assignments_Image.png" alt="my-courses" />
+          </div>
+        </div>
+        <div class="row boxes">
+          <div class="col col-lg-6 col-sm-12 image-box">
+            <img src="./image/Questions_Image.png" alt="my-courses" />
+          </div>
+          <div class="col col-lg-6 col-sm-12 text-area">
+            <h2>Questions</h2>
+            <p style="font-weight: 50px">
+              Do you have a question regarding your lecture or any course
+              content? Write them here and we will have our Experts answer them
+              for you.
+            </p>
+            <div class="formDiv">
+              <form>
+                <input
+                  name="name"
+                  type="text"
+                  class="feedback-input"
+                  placeholder="Name"
+                  id="formName"
+                />
+                <input
+                  name="email"
+                  type="text"
+                  class="feedback-input"
+                  placeholder="Email"
+                  id="formEmail"
+                />
+                <textarea
+                  name="text"
+                  class="feedback-input"
+                  placeholder="Comment"
+                  id="formQuery"
+                ></textarea>
+                <input type="submit" value="SUBMIT" id="formSubmit" />
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- User Backend Area -->
+
+    <script type="module">
+      //import authApp from "./app.js";
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.4.0/firebase-app.js";
+      import {
+        getDatabase,
+        set,
+        ref,
+        update,
+      } from "https://www.gstatic.com/firebasejs/9.4.0/firebase-database.js";
+      //import { getAnalytics } from "firebase/analytics";
+
+      const firebaseConfig = {
+        apiKey: "AIzaSyA7CFtGbOu9nuSub50ESIAbozuwc1C8Bi4",
+        authDomain: "iha-pragyan.firebaseapp.com",
+        projectId: "iha-pragyan",
+        storageBucket: "iha-pragyan.appspot.com",
+        messagingSenderId: "558985303812",
+        appId: "1:558985303812:web:9dcb07bf0135f0d897a251",
+        measurementId: "G-GFS076F277",
+      };
+
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      //const analytics = getAnalytics(app);
+
+      const database = getDatabase(app);
+
+      formSubmit.addEventListener("click", (e) => {
+        e.preventDefault();
+        var name = document.getElementById("formName").value;
+        var email = document.getElementById("formEmail").value;
+        var query = document.getElementById("formQuery").value;
+        set(ref(database, "Query/" + name), {
+          Email: email,
+          Query: query,
+        });
+        console.log(name);
+      });
+    </script>
+    <!-- User Backend Area -->
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <script src="javascript.js"></script>
+  </body>
+</html>
