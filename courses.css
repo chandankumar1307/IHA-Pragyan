@@ -22,11 +22,11 @@
 .cards-container {
   display: flex;
   width: 1200px;
-  justify-content: space-around;
+  justify-content: center;
   flex-wrap: wrap;
 }
 .cards {
-  margin: 10px;
+  margin: 30px;
   background-color: #fff;
   border-radius: 20px;
   box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
